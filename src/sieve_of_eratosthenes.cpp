@@ -1,3 +1,6 @@
+// -*- mode: c++ -*-
+// Copyright (c) 2014, 2015 Olaf Dietsche
+
 #include <cmath>
 #include <cstddef>
 #include <vector>

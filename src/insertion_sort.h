@@ -1,3 +1,6 @@
+// -*- mode: c++ -*-
+// Copyright (c) 2014 Olaf Dietsche
+
 #ifndef __insertion_sort_h_included__
 #define __insertion_sort_h_included__
 

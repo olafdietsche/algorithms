@@ -1,3 +1,6 @@
+// -*- mode: c++ -*-
+// Copyright (c) 2014 Olaf Dietsche
+
 #ifndef __quick_sort_h_included__
 #define __quick_sort_h_included__
 

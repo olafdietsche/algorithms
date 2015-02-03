@@ -1,3 +1,6 @@
+// -*- mode: c++ -*-
+// Copyright (c) 2014 Olaf Dietsche
+
 #ifndef __next_combination_h_included__
 #define __next_combination_h_included__
 

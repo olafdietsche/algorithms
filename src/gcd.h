@@ -1,3 +1,6 @@
+// -*- mode: c++ -*-
+// Copyright (c) 2015 Olaf Dietsche
+
 #ifndef __gcd_h_included__
 #define __gcd_h_included__
 

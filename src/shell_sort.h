@@ -1,3 +1,6 @@
+// -*- mode: c++ -*-
+// Copyright (c) 2014 Olaf Dietsche
+
 #ifndef __shell_sort_h_included__
 #define __shell_sort_h_included__
 
