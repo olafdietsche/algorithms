@@ -44,8 +44,7 @@ private:
 		node *left_, *right_;
 		T value_;
 
-		template<typename V> void preorder_traversal(V visit) const
-		{
+		template<typename V> void preorder_traversal(V visit) const {
 			visit(value_);
 			if (left_)
 				left_->preorder_traversal(visit);
@@ -54,8 +53,7 @@ private:
 				right_->preorder_traversal(visit);
 		}
 
-		template<typename V> void inorder_traversal(V visit) const
-		{
+		template<typename V> void inorder_traversal(V visit) const {
 			if (left_)
 				left_->inorder_traversal(visit);
 
@@ -64,8 +62,7 @@ private:
 				right_->inorder_traversal(visit);
 		}
 
-		template<typename V> void postorder_traversal(V visit) const
-		{
+		template<typename V> void postorder_traversal(V visit) const {
 			if (left_)
 				left_->postorder_traversal(visit);
 
