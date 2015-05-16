@@ -4,25 +4,15 @@
 #ifndef __quick_sort_h_included__
 #define __quick_sort_h_included__
 
+#include "middle_value.h"
 #include <algorithm>
 #include <functional>
 
 template<typename I, typename T, typename C> I quicksort_partition(I first, I last, C cmp)
 {
-	--last;
-
-	// sort first, middle and last element
 	auto middle = first + (last - first) / 2;
-	if (cmp(*middle, *first))
-		std::iter_swap(first, middle);
-
-	if (cmp(*last, *middle))
-		std::iter_swap(last, middle);
-
-	if (cmp(*middle, *first))
-		std::iter_swap(first, middle);
-
-	T pivot = *middle;
+	--last;
+	T pivot = middle_value(*first, *middle, *last);
 
 	while (first < last) {
 		while (first != last && cmp(*first, pivot))
