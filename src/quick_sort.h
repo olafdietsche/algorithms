@@ -31,7 +31,7 @@ template<typename I, typename T = typename std::iterator_traits<I>::value_type, 
 	if (last - first > 1) {
 		I i = quicksort_partition<I, T, C>(first, last, cmp);
 		quick_sort(first, i, cmp);
-		quick_sort(i, last, cmp);
+		quick_sort(i + 1, last, cmp);
 	}
 }
 
