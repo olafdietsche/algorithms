@@ -4,25 +4,27 @@
 
 // Copyright (c) 2015 Olaf Dietsche
 
+#include <functional>
+
 /**
  * Find the middle value of three values.
  */
 
-template<typename T> T middle(T a, T b, T c)
+template<typename T, typename C = std::less<T> > T middle_value(T a, T b, T c, C cmp = C())
 {
-	if (a < b) {
-		if (b < c)
+	if (cmp(a, b)) {
+		if (cmp(b, c))
 			return b;
 
-		if (a < c)
+		if (cmp(a, c))
 			return c;
 
 		return a;
 	} else {
-		if (a < c)
+		if (cmp(a, c))
 			return a;
 
-		if (c < b)
+		if (cmp(c, b))
 			return b;
 
 		return c;
