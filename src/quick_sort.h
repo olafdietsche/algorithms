@@ -5,6 +5,7 @@
 #define __quick_sort_h_included__
 
 #include <algorithm>
+#include <functional>
 
 template<typename I, typename T, typename C> I quicksort_partition(I first, I last, C cmp)
 {
